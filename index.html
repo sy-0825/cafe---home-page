@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cafe - homepage</title>
+  <link href="" rel="stylesheet">
+  <link rel="icon" href="favicon.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- logo img -->
+    <h1>
+     <img src="cafe_logo.JPG" alt="カフェ" width="200" height="50" class="logo-sp">
+     <img src="cafe_logo.JPG" alt="カフェ" width="300" height="80" class="logo-pc">
+   </h1>
+    <!-- hamburger -->
+    <div class="sp-menu">
+      <span class="material-symbols-outlined" id="open">menu</span>
+    </div>
+    <div class="pc-menu">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#Access">Access</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <div class="overlay">
+    <span class="material-symbols-outlined" id="close">close</span>
+    <nav>
+      <ul class="overlay-link">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#Access">Access</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- top img -->
+    <h2>
+      <img src="cafe_top.JPG" alt="カフェ" width="1480" height="600" class="hero-img">
+    </h2>
+
+    <!-- about -->
+    <div class="about">
+      <h3 id="about">About</h3>
+      <img src="cafe_study.JPG" alt="カフェの写真" width="719" height="480" class="about-pic">
+      <p class="text">私たちは居心地の良い空間を提供します。</p>
+    </div>
+
+    <!-- menu -->
+    <div class="menu-list">
+      <h3 id="menu">Menu</h3>
+      <div class="menu-set">
+        <div class="menu">
+          <img src="coffee.JPG" alt="コーヒーの写真" width="349" height="349">
+          <p class="title">coffee</p>
+          <p class="yen">￥300</p>
+        </div>
+        <div class="menu">
+          <img src="cafelatte.JPG" alt="カフェラテの写真" width="349" height="349">
+          <p class="title">cafe latte</p>
+          <p class="yen">￥350</p>
+        </div>
+        <div class="menu">
+          <img src="cappuccino.JPG" alt="カプチーノの写真" width="349" height="349">
+          <p class="title">cappuccino</p>
+          <p class="yen">￥350</p>
+        </div>
+        <div class="menu">
+          <img src="croissant.JPG" alt="クロワッサンの写真" width="349"  height="349">
+          <p class="title">croissant</p>
+          <p class="yen">￥300</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- access -->
+    <div class="access">
+      <h3 id="Access">Access</h3>
+      <p class="access-text">〒150-0042<br>
+      東京都渋谷区宇田川町１-２-３</p>
+    </div>
+
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#Access">Access</a></li>
+    </ul>
+    <p class="copyright"> &copy; 2023 cafe All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
