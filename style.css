@@ -1,5 +1,38 @@
 @charset "utf-8";
 
+/* common */
+body {
+  font-family: 'Julius Sans One',
+  sans-serif;
+}
+
+main {
+  box-sizing: border-box;
+  margin: .5%;
+  padding: 0;
+}
+
+
+
+/* header */
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.logo-pc {
+  display: none;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.logo-sp {
+  margin-top: 5%;
+}
+
+
+
 /* hamburger */
 header {
   display: flex;
@@ -11,6 +44,7 @@ header {
 }
 
 .sp-menu #open {
+  margin: 0 5%;
   line-height: 32px;
   line-height: 64px;
   cursor: pointer;
@@ -73,28 +107,7 @@ header {
 
 .pc-menu {
   display: none;
-}
-
-
-/* common */
-main {
-  box-sizing: border-box;
-  margin: 5%;
-  padding: 0 16px;
-  font-family: 'century gothic',
-  cursive;
-}
-
-
-
-/* header */
-h1 {
   margin: 0 5%;
-  font-size: 0;
-}
-
-.logo-pc {
-  display: none;
 }
 
 
@@ -120,8 +133,6 @@ h2{
 
 h3 {
   text-align: center;
-  font-family: 'Julius Sans One',
-  sans-serif;
   font-size: 40px;
   color: black;
   margin-top: 72px;
@@ -134,16 +145,29 @@ h3 {
 
 .text {
   font-size: 24px;
+  font-family: 'Zen Maru Gothic',
+  sans-serif;
 }
 
 
 
-/* menu */
+/* cafe menu */
+
+/* .menu-img-sp {
+  display: inline;
+} */
+
+.menu-img-pc {
+  display: none;
+}
+
 .menu-list {
   margin: 32px 0;
   text-align: center;
   gap: 24px;
+  font-weight: bold;
 }
+
  
 .title {
   text-align: center;
@@ -167,6 +191,8 @@ h3 {
   text-align: center;
   font-size: 24px;
   margin-top: 16px;
+  font-family: 'Zen Maru Gothic',
+  sans-serif;
 }
 
 
@@ -200,7 +226,6 @@ a {
 /* large screen */
 
 @media (min-width: 600px) {
-
   /* header */
   .logo-sp {
     display: none;
@@ -235,25 +260,30 @@ a {
     margin: 40px;
   }
 
-  .pc-menu a:hover {
-    background: #f2f2f2;;
-
-  }
-
   .sp-menu {
     display: none;
   }
+  
   /* about */
   .text {
     font-size: 32px;
   }
 
   /* menu */
+  .menu-img-sp {
+    display: none;
+  }
+
+  .menu-img-pc {
+    display: inline;
+  }
+
   .menu-set {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 24px;
+    margin: 32px 0;
     gap: 24px;
   }
+
+  
 }
