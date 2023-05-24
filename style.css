@@ -143,19 +143,22 @@ h3 {
   height: auto;
 }
 
-.text {
-  font-size: 24px;
+.about-text-sp {
+  font-size: 16px;
   font-family: 'Zen Maru Gothic',
   sans-serif;
 }
 
+.about-text-pc {
+  display: none;
+}
 
 
 /* cafe menu */
 
-/* .menu-img-sp {
+.menu-img-sp {
   display: inline;
-} */
+}
 
 .menu-img-pc {
   display: none;
@@ -187,12 +190,17 @@ h3 {
   margin: 160px 0;
 }
 
-.access-text {
+.access-text-sp {
+  display: inline;
   text-align: center;
   font-size: 16px;
   margin-top: 16px;
   font-family: 'Zen Maru Gothic',
   sans-serif;
+}
+
+.access-text-pc {
+  display: none;
 }
 
 
@@ -265,8 +273,18 @@ a {
   }
   
   /* about */
-  .text {
+  /* .text {
     font-size: 32px;
+  } */
+  .about-text-pc {
+    display: block;
+    font-size: 32px;
+    font-family: 'Zen Maru Gothic',
+    sans-serif;
+  }
+  
+  .about-text-sp {
+    display: none;
   }
 
   /* menu */
@@ -285,5 +303,19 @@ a {
     gap: 24px;
   }
 
+  /* access */
+  .access-text-pc {
+    display: inline;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 32px;
+    font-family: 'Zen Maru Gothic',
+    sans-serif;
+  }
+  
+  .access-text-sp {
+    display: none;
+  }
+  
   
 }
